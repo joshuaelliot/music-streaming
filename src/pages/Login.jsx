@@ -44,7 +44,7 @@ function Login() {
             >ingresar</button>
             <p>O registrate con Google</p>
             <button id="btn-google">Google</button>
-            <GoogleOAuthProvider clientId={ID_GOOGLE}>
+            <GoogleOAuthProvider clientId={ID}>
                 <div>
                     <h2>Login con Google</h2>
                     {!user ? (
