@@ -1,0 +1,16 @@
+.home-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.portada-container{
+    width: 100%;
+    height: 400px;
+    background-image: url("/src/assets/img/music.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(2px);
+    box-sizing: border-box;
+    
+}

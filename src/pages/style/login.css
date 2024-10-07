@@ -1,0 +1,32 @@
+.login-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blanchedalmond;
+    color: black;
+}
+.login-container > form{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-google{
+    background-color: aliceblue;
+    border: solid rgba(253, 43, 25, 1.0)  2px;
+    border-radius: 10px;
+    color: black;
+    /*
+    * Created with https://www.css-gradient.com
+    * Gradient link: https://www.css-gradient.com/?c1=fd2b19&c2=3db7dc&gt=l&gd=dtl
+    */
+
+    
+}
