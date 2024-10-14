@@ -23,6 +23,8 @@ function AppRouter(){
                     </ProtectedRoute>
                 }
                 >
+                    
+                    <Route path="playlist" element={<h1>playlist</h1>}/>
                     <Route path="profile" element={<h1>profile</h1>}/>
                     <Route path="settings" element={<h1>settings</h1>}/>
                 </Route>
