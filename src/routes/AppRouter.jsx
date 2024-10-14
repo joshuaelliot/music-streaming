@@ -6,6 +6,7 @@ import Login from "../pages/Login"
 import ProtectedRoute from "./ProtectedRoute"
 import Dashboard from "../pages/dashboard/Dashboard"
 import Album from "./Album"
+import Playlist from "../pages/dashboard/playlist/Playlist"
 function AppRouter(){
     return(
         <Router>
@@ -24,7 +25,7 @@ function AppRouter(){
                 }
                 >
                     
-                    <Route path="playlist" element={<h1>playlist</h1>}/>
+                    <Route path="playlist" element={<Playlist/>}/>
                     <Route path="profile" element={<h1>profile</h1>}/>
                     <Route path="settings" element={<h1>settings</h1>}/>
                 </Route>

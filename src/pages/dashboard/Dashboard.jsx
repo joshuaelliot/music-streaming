@@ -6,7 +6,9 @@ function Dashboard(){
     const navigate = useNavigate();
     return (<>
         <div className={styleDashboard.dashboardContainer}>
-      
+      <header className={styleDashboard.header}>
+        <h1>Soy human</h1>
+        </header>
       <nav className={styleDashboard.dashboardNav}>
       <h1 id={styleDashboard.title}>Dashboard</h1>
         <ul>
@@ -24,6 +26,9 @@ function Dashboard(){
 
       {/* Aquí se renderizan las subrutas */}
       <Outlet />
+      <div className={styleDashboard.reproductor}>
+        <h1>Reproductor</h1>
+      </div>
     </div>
     </>)
 }
