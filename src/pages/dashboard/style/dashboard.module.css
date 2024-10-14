@@ -1,0 +1,43 @@
+.dashboardContainer {
+    width: 100%;
+    height: 100vh;
+    margin: 0%;
+    padding: 0;
+    background-color: aqua;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 60px 1fr 80px;
+}
+
+#title {
+    margin: 0;
+}
+
+.header {
+    /**
+    comienza en la fila 1 
+    comienza en la columna 1
+    termina en la fila 1
+    termina en la columna 4
+    */
+    grid-area: 1 / 1 / 1 / 3;
+    background-color: darkgoldenrod;
+}
+
+.dashboardNav {
+    
+    box-sizing: border-box;
+    overflow-x: hidden;
+    grid-area: 2 / 1 / 2 / 2;
+    background-color: crimson;
+    transition : width 1s ease-in-out;
+}
+
+
+.reproductor{
+    box-sizing: border-box;
+    grid-area: 3 / 1 / 3 / 3;
+    background-color: black;
+    color: aliceblue;
+}
