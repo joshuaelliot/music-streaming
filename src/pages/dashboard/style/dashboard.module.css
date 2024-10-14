@@ -26,7 +26,7 @@
 }
 
 .dashboardNav {
-    width: 200px;
+    
     box-sizing: border-box;
     overflow-x: hidden;
     grid-area: 2 / 1 / 2 / 2;
