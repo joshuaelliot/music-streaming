@@ -1,8 +1,11 @@
 import { Outlet, Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { useState } from "react";
-import spoti from "../../assets/spoti.svg"
-import library from "../../assets/album.svg"
+import btnRandom from "../../assets/controler/shuffle-solid.svg"
+import btnBack from "../../assets/controler/backward-step-solid.svg"
+import btnNext from "../../assets/controler/forward-step-solid.svg"
+import btnRepeat from "../../assets/controler/repeat-solid.svg"
+import btnPlay from "../../assets/controler/play-solid.svg"
 import styleDashboard from "./style/dashboard.module.css"
 function Dashboard() {
 
@@ -38,10 +41,21 @@ function Dashboard() {
         </div>
         <div className={styleDashboard.playerControlerContainer}>
           <div className={styleDashboard.btnsControlerContainer}>
-            
+            <img className={styleDashboard.btnsSecond}
+            src={btnRandom} alt="" />
+            <img className={styleDashboard.btnsSecond}
+            src={btnBack} alt="" />
+            <img className={styleDashboard.btnPrimary}
+            src={btnPlay} alt="" />
+            <img className={styleDashboard.btnsSecond}
+            src={btnNext} alt="" />
+            <img className={styleDashboard.btnsSecond}
+            src={btnRepeat} alt="" />
           </div>
         <div className={styleDashboard.inputContainer}>
+          <span>1:30</span>
         <input type="range" />
+        <span>3:00</span>
         </div>
         </div>
         

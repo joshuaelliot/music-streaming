@@ -62,7 +62,7 @@
 .playerControlerContainer{
     width: auto;
     height: 100%;
-    background-color: cadetblue;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,8 +70,30 @@
 .btnsControlerContainer{
     width: auto;
     height: auto;
-    padding: 5px;
+    padding:  5px 10px;
     margin: 0;
+    display: flex;
+    align-items: center;
+    background-color: gray;
+}
+.btnsControlerContainer > .btnsSecond{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    margin: 0 5px;
+    box-sizing: border-box;
+    color: aliceblue;
+
+}
+.btnsControlerContainer > .btnPrimary{
+    width: 40px;
+    height: 40px;
+    margin: 0 3px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    text-align: center;
+    box-sizing: border-box;
 }
 .portSongContainer {
     width: auto;
@@ -152,19 +174,22 @@
     padding: 0px 0px;
     margin: 0;
     padding: 0;
-    background-color: rgb(111, 0, 255);
+    background-color:transparent;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    justify-content: start;
     align-items: center;
+    
 }
 
+.inputContainer > span{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
 .inputContainer>input[type="range"] {
 
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: 0 10px;
     padding: 0;
     border: none;
     outline: none;
@@ -175,7 +200,7 @@
 
 
 .inputContainer:hover {
-    background-color: rgb(91, 14, 143);
+    background-color: black;
 }
 
 .inputContainer:hover input[ type="range"] {
